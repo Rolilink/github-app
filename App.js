@@ -1,5 +1,5 @@
 import React from 'react';
-import Router from './router';
+import Router from './Router';
 import routes from './routes';
 
 export default class App extends React.Component {
