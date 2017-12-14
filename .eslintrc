@@ -1,0 +1,16 @@
+{
+  "extends": "airbnb",
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true,
+    "jest": true
+  },
+  "rules": {
+    "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx"] }],
+    "react/prefer-stateless-function": ["off", { "ignorePureComponents": true }],
+    "import/no-extraneous-dependencies": ["warn", {"devDependencies": true, "optionalDependencies": false, "peerDependencies": false}],
+    "class-methods-use-this": ["off", { "exceptMethods": [] }]
+  }
+}
