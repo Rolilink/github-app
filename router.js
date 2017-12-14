@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import { NativeRouter, Route } from 'react-router-native';
+import { Container } from 'native-base';
 import PropTypes from 'prop-types';
 
 const styles = StyleSheet.create({
@@ -30,9 +31,9 @@ class Router extends React.Component {
   render() {
     return (
       <NativeRouter>
-        <View style={styles.container}>
+        <Container>
           {this.routes}
-        </View>
+        </Container>
       </NativeRouter>
     );
   }
