@@ -12,7 +12,7 @@ This is a React Native App created to explore repositories contributors and repo
 Since this is my second app using React Native there are some issues, but I wanted to showcase my skills as a react engineer, my experience architecting react apps and my skills to learn new stacks fast.
 
 - There is an performance issue on the InfiniteListComponent when rendering a lot of records.
-- There is also a touch issue on the search page and the back link on the list views.
+- There is also a touch issue on the search page and the back link on the list views just double click, tested on my iphone 6.
 - Request are Throttled because of github rate-limiting for non authenticated accounts, sometimes when scrolling lists will not update because request are being throttled.
 - This app haven't been tested on android but it should work fine since it uses native-base on most of the views.
 
