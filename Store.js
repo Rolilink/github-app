@@ -1,10 +1,10 @@
 import { createStore, applyMiddleware, combineReducers } from 'redux';
-import { composeWithDevTools } from 'remote-redux-devtools';
+import { composeWithDevTools } from 'redux-devtools-extension';
 
-export default ({ state, reducers = {}, middlewares = [] }) => (
+export default ({ reducers = {}, middlewares = [] }) => (
   createStore(
     combineReducers(reducers),
-    state,
-    composeWithDevTools(applyMiddleware(...middlewares)),
+    //composeWithDevTools(applyMiddleware(...middlewares)), //use this to debug
+    applyMiddleware(...middlewares),
   )
 );

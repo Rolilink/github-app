@@ -5,11 +5,11 @@ import PromiseMiddleware from 'redux-promise-middleware';
 import Expo from 'expo';
 import Router from './Router';
 import routes from './routes';
+import reducers from './reducers';
 import createStore from './Store';
 
 NativeModules.DevSettings.setIsDebuggingRemotely(true); // uncomment to debug
 
-const reducers = [() => ({})];
 const store = createStore({ reducers, middlewares: [new PromiseMiddleware()] });
 
 export default class App extends React.Component {

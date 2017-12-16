@@ -1,17 +1,6 @@
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
-import { NativeRouter, Route } from 'react-router-native';
-import { Container } from 'native-base';
+import { NativeRouter, Switch, Route } from 'react-router-native';
 import PropTypes from 'prop-types';
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
 
 class Router extends React.Component {
   static propTypes = {
@@ -31,9 +20,9 @@ class Router extends React.Component {
   render() {
     return (
       <NativeRouter>
-        <Container>
+        <Switch>
           {this.routes}
-        </Container>
+        </Switch>
       </NativeRouter>
     );
   }
