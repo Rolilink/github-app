@@ -38,8 +38,6 @@ export default class SearchForm extends React.Component {
       return null;
     }
 
-    console.log(this.searchType);
-
     switch (this.searchType) {
       case REPO_SEARCH:
         return (
@@ -65,8 +63,6 @@ export default class SearchForm extends React.Component {
   get searchType() {
     const { query } = this;
 
-    console.log(query);
-
     return query.includes('/') ? REPO_SEARCH : KEYWORD_SEARCH;
   }
 
@@ -76,7 +72,7 @@ export default class SearchForm extends React.Component {
         <Form>
           <Item style={styles.searchInput} floatingLabel>
             <Label>Search Query</Label>
-            <Input onChange={({ nativeEvent }) => this.setState({ query: nativeEvent.text })} />
+            <Input onChange={({ nativeEvent }) => this.setState({ query: nativeEvent.text.trim() })} />
           </Item>
           { this.searchButton }
         </Form>
