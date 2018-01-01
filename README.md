@@ -15,15 +15,6 @@ This is a React Native App created to explore repositories contributors and repo
 - Update react-native localhost with the ip of your computer when debugging using expo + react-native-debugger following this [instruction](https://github.com/jhen0409/react-native-debugger).
 - Run `yarn ios` to open the app on the simulator through expo
 
-## Run App on Ios simulator through xcode
-- Create a new git branch `git checkout -b temp-eject`
-- Update commented lines on `App.js` and `Store.js` when switching between debugging and production.
-- Comment and uncomment the lines on `App.js` refering to expo so it will not load expo
-- Run `yarn eject` to build the project
-- Open XCode and select `open another project`
-- Navigate into the `/ios` folder and select and open `githubapp.xcodeproj`
-- Run the simulator
-
 ## Known issues
 Since this is my second app using React Native there are some issues, but I wanted to showcase my skills as a react engineer, my experience architecting react apps and my skills to learn new stacks fast.
 
